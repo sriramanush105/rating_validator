@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ALL Misrated reviews</title>
+  </head>
+  <body>
+    {% if reviews %}
+  <table>
+    <tr>
+      <td>
+        review
+      </td>
+      <td>
+        rating
+      </td>
+    </tr>
+    {% for r in reviews %}
+    <tr>
+<td>
+{{r.review}}
+</td>
+<td>
+  {{r.rating}}
+</td>
+  </tr>
+    {% endfor %}
+  </table>
+
+    {%  endif  %}
+
+  </body>
+</html>
